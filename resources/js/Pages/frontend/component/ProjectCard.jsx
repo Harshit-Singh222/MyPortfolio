@@ -8,15 +8,11 @@ export default function ProjectCard({image, toolTip}) {
 
     return (
         <div ref={toolTipRef} className="group relative inline-block"
-             onMouseEnter={({clientX}) => {
-                 setIsHovered(true);
-                 if (!toolTipRef.current || !container.current) return;
-                 const {left} = container.current.getBoundingClientRect();
-                 toolTipRef.current.style.left = clientX - left + "px";
-             }}
-             onMouseLeave={() => (setIsHovered(false))}>
+             onMouseEnter={() => setIsHovered(true)}
+             onMouseLeave={() => setIsHovered(false)}
+        >
             <span
-                className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition bg-blue-500 text-white p-1 rounded absolute bottom-full mt-2 whitespace-nowrap"
+                className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition bg-gray-100 py-1 px-2 rounded absolute bottom-full mb-2 ml-[20%] whitespace-nowrap"
                 ref={toolTipRef}>
                 {toolTip}
             </span>
