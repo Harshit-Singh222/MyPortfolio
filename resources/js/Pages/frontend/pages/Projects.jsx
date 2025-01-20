@@ -8,23 +8,23 @@ export default function Projects() {
             <Head title="Projects"/>
             <div className="flex lg:h-[calc(100vh-12rem)] justify-center items-center">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+                    <a target="_blank" href="https://github.com/Harshit-Singh222/PMS">
+                        <ProjectCard image={'project1.png'} toolTip={'yooo ntjh hrtjb sbejb jeb'} />
+                    </a>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 1'} />
+                        <ProjectCard image={'project2.png'} />
                     </Link>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Project 2'} />
+                        <ProjectCard image={'project1.png'} />
                     </Link>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 3'} />
+                        <ProjectCard image={'project1.png'} />
                     </Link>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 4'} />
+                        <ProjectCard image={'project2.png'} toolTip={'yooo ntjh hrtjb sbejb jeb'} />
                     </Link>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Coming Soon'} />
-                    </Link>
-                    <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Coming Soon'} />
+                        <ProjectCard image={'project2.png'}  />
                     </Link>
                 </div>
             </div>
