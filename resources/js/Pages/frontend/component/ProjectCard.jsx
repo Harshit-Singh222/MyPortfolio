@@ -12,7 +12,7 @@ export default function ProjectCard({image, toolTip}) {
              onMouseLeave={() => setIsHovered(false)}
         >
             <span
-                className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition bg-gray-100 py-1 px-2 rounded absolute bottom-full mb-2 ml-[20%] whitespace-nowrap"
+                className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-gray-100 py-1 px-2 rounded absolute bottom-full mb-2 ml-[20%] whitespace-nowrap"
                 ref={toolTipRef}>
                 {toolTip}
             </span>
