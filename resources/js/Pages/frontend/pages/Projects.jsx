@@ -8,23 +8,23 @@ export default function Projects() {
             <Head title="Projects"/>
             <div className="flex lg:h-[calc(100vh-12rem)] justify-center items-center">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+                    <a target="_blank" href="https://github.com/Harshit-Singh222/PMS">
+                        <ProjectCard image={'pma.png'} toolTip="Project Management Website" />
+                    </a>
+                    <a target="_blank" href="https://github.com/Harshit-Singh222/WA">
+                        <ProjectCard image={'wa.png'} toolTip="Weather Web App" />
+                    </a>
+                    <Link href={route('home')}>
+                        <ProjectCard image={'portfolio.png'} toolTip="Portfolio Website" />
+                    </Link>
+                    <a target="_blank" href="https://github.com/Harshit-Singh222/Chat-App">
+                        <ProjectCard image={'ca.png'} toolTip="Chat Application" />
+                    </a>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 1'} />
+                        <ProjectCard image={'portfolio.png'} toolTip="Coming Soon" />
                     </Link>
                     <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Project 2'} />
-                    </Link>
-                    <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 3'} />
-                    </Link>
-                    <Link href={route('projects')}>
-                        <ProjectCard image={'project1.png'} heading={'Project 4'} />
-                    </Link>
-                    <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Coming Soon'} />
-                    </Link>
-                    <Link href={route('projects')}>
-                        <ProjectCard image={'project2.png'} heading={'Coming Soon'} />
+                        <ProjectCard image={'portfolio.png'} toolTip="Coming Soon" />
                     </Link>
                 </div>
             </div>
